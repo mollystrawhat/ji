@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_m42zcdsuqnyfzuxr.css">
+    <style>
+        .layout{
+            width:900px;
+            margin: 0 auto;
+            padding:40px;
+            color:#333;
+            background: rgba(241, 241, 241, 0.2);
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        a{
+            text-decoration: none;
+            color:#333;
+        }
+        a:hover{
+            opacity: 0.8;
+        }
+        p{
+            text-align: justify;
+        }
+        
+        header:after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        header .img,header .name,header .contacts{
+            float:left;
+            margin-left: 50px;
+        }
+        header img{
+            width:150px;
+            margin-top: 50px;
+            border-radius: 50%
+        }
+        header .name{
+            margin-top: 30px;
+            margin-right: 70px;
+            text-align: center;
+        }
+        .name h1{margin-left: 0;}
+
+        header .line-con{
+            display: block;
+            width: 300px;
+            height: 2px;
+            margin:13px 0;
+            background: #333;
+        }
+        /*header部分结束啦    header部分结束啦     header部分结束啦  */
+        
+        main .exper,
+        main .edu{
+            margin-top:30px;
+        }
+        main .line-x{
+            display: block;
+            width:600px;
+            height: 2px;
+            background: #ccc;
+        }
+        main .line-y{
+            display:inline-block;
+            position:relative;
+            top:29px;
+            float:left;
+            width: 2px;
+            margin-bottom: 22px;
+            margin-right: 30px;
+            background: #333;
+        }
+        main .line-exper{
+            height: 345px;
+        }
+        main .line-edu{
+            height: 345px;
+        }
+        .line-y .circle{
+            width:10px;
+            height: 10px;
+            background: #333;
+            border-radius: 50%;
+            position:relative;
+            left:-4px;
+        }
+        .line-exper>div:nth-child(2){
+            top:113px;
+        }
+        .line-exper>div:nth-child(3){
+            top:228px;
+        }
+        .line-edu>div:nth-child(2){
+            top:113px;
+        }
+        .line-edu>div:nth-child(3){
+            top:228px;
+        }
+        /*main部分结束啦     main部分结束啦     main部分结束啦    */
+        footer:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        footer .half{
+            box-sizing: border-box;
+            float:left;
+            width:410px;
+        }
+        .line-half{
+            display: block;
+            width:400px;
+            height: 2px;
+            background: #ccc;
+        }
+        .extra p{
+            margin-left:30px; 
+        }
+        .skills{
+            margin-left: 80px;
+        }
+        .skills div{
+            float:left;
+            width:200px;
+            margin-top: 20px;
+        }
+        .skills div p{
+            font-size:20px;
+            padding: 20px 0;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="layout">
+    <header>
+        <div class="img">
+            <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2978926068,1452272622&fm=23&gp=0.jpg" alt="">
+        </div>
+        <div class="name">
+            <h1 class="name">Molly</h1>
+            <p class="post">求职意向：前端工程师</p>
+        </div>
+        <div class="contacts">
+            <h3>CONTACTS<span class="line-con"></span></h3>
+            <p class="iconfont icon-noun157872cc"> &nbsp Age: 23</p>
+            <p class="iconfont icon-mobile"> &nbsp Mobile: 156-1234-5678</p>
+            <p class="iconfont icon-email"> &nbsp E-mail: mollystrawhat@gmail.com</p>
+            <p class="iconfont icon-address"> &nbsp Address: 上海市浦东新区</p>
+            <p class="iconfont icon-github"> &nbsp Github:<a href="https://github.com/mollystrawhat"> mollystrawhat</a></p>
+        </div> 
+    </header>
+
+    <main>
+        <div class="exper">
+            <h3>WORK EXPERIENCE</h3>
+            <span class="line-x">
+            </span>
+            <span class="line-y line-exper">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </span>
+            <div class="exper-detail">
+                <h4>Marketplaces</h4>
+                <p>Shall I compare thee to a summer's day?Thou art more lovely and more temperate,Rough winds do shake the darling buds of May,And summer's lease hath all too short a date,Sometime too hot the eye of heaven shines,And often is his gold complexion dimmed.</p>
+                <h4>Apple Inc</h4>
+                <p>Shall I compare thee to a summer's day?Thou art more lovely and more temperate,Rough winds do shake the darling buds of May,And summer's lease hath all too short a date,Sometime too hot the eye of heaven shines,And often is his gold complexion dimmed.</p>
+                <h4>Aroma Bar Network</h4>
+                <p>Shall I compare thee to a summer's day?Thou art more lovely and more temperate,Rough winds do shake the darling buds of May,And summer's lease hath all too short a date,Sometime too hot the eye of heaven shines,And often is his gold complexion dimmed.</p>
+            </div>
+        </div> 
+        <div class="edu">
+            <h3>EDUCATION</h3>
+            <span class="line-x"></span>
+            <span class="line-y line-edu">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </span>
+            <div class="edu-detail"></div>
+                <h4>College</h4>
+                <p>Shall I compare thee to a summer's day?Thou art more lovely and more temperate,Rough winds do shake the darling buds of May,And summer's lease hath all too short a date,Sometime too hot the eye of heaven shines,And often is his gold complexion dimmed.</p>
+                <h4>University</h4>
+                <p>Shall I compare thee to a summer's day?Thou art more lovely and more temperate,Rough winds do shake the darling buds of May,And summer's lease hath all too short a date,Sometime too hot the eye of heaven shines,And often is his gold complexion dimmed.</p>
+                <h4>High School</h4>
+                <p>Shall I compare thee to a summer's day?Thou art more lovely and more temperate,Rough winds do shake the darling buds of May,And summer's lease hath all too short a date,Sometime too hot the eye of heaven shines,And often is his gold complexion dimmed.</p>
+        </div>  
+    </main>
+    <footer>
+        <div class="extra half">
+            <h3>EXTRA CURRICULAR ACTIVITIES</h3>
+            <span class="line-half"></span>
+            <div class="contant-extra">
+                <h4 class="iconfont icon-Age"> &nbsp Volunteer</h4>
+                <p>If a feature you're looking for is not available on the site, you can vote to have it included. Better yet, if you've done the research you can even submit it yourself!</p>
+                <h4 class="iconfont icon-Age"> &nbsp Volunteer</h4>
+                <p>If a feature you're looking for is not available on the site, you can vote to have it included. Better yet, if you've done the research you can even submit it yourself!</p>
+            </div>
+        </div>
+        <div class="skills half">
+            <h3>PROFESIONAL SKILLS</h3>
+            <span class="line-half"></span>
+            <div class="left-skills">
+                <p class="iconfont icon-skill"> &nbsp HTML&CSS</p>
+                <p class="iconfont icon-skill"> &nbsp JAVASCRIPT</p>
+                <p class="iconfont icon-skill"> &nbsp JQUERY</p>
+            </div>
+            <div class="right-skills">
+                <p class="iconfont icon-skill"> &nbsp PHOTOSHOP</p>
+                <p class="iconfont icon-skill"> &nbsp SLIM</p>
+                <p class="iconfont icon-skill"> &nbsp ILLUSTRATOR</p>
+            </div>
+        </div>
+
+    </footer>
+</div>   
+</body>
+</html>

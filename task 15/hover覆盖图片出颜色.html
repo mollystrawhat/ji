@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hover图片时候出颜色覆盖</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3m5rszzyqqynl8fr.css">
+    <style>
+        a {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: 250px;
+}
+a .cover:hover {
+    opacity: 1;
+}
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(254,209,54,.9);
+    opacity: 0;
+    color: #fff;
+    transition: .8s;
+}
+.cover > i {
+    position: absolute;
+    left: 22%;
+    font-size: 250px;
+    line-height: 250px;
+}
+    </style>
+</head>
+<body>
+  <a href="#moments">
+    <img src="http://www.hola.com.cn/zhuanti/img/datu.png" alt="图片">
+    <span class="cover">
+      <i class="iconfont icon-tmall"></i>
+    </span>
+</a>  
+</body>
+</html>

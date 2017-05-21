@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navigation</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        .layout{
+            width: 600px;
+            margin:0 auto;
+        }
+        .layout ul{
+            list-style: none;
+            background: #f1f1f1;
+            margin: 0;
+            padding:0;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        }
+        .layout ul:after{
+            content:"";
+            display: table;
+            clear:both;
+        }
+        .layout ul>li{
+            position:relative; 
+            float: left;
+        }
+        ul li a{
+            display: block;
+            color:#333;
+            text-decoration: none;
+            padding:8px 16px;
+        }
+        ul li a:hover{
+            background-color: #ccc;
+        }
+        ul .more{
+            margin: 0;
+            padding: 0;
+            display: none;
+            /*下面三行作用主要是在ahover的时候“更多”的下拉菜单不会吧ul撑起来*/
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        ul>li:hover .more{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="layout">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">作品</a></li>
+        <li>
+        <a href="#">更多</a>
+        <div class="more">
+        <a href="#">Github</a>   
+        <a href="#">博客</a>   
+        <a href="#">知乎</a>   
+        </div>
+        </li>
+    </ul>
+</div>    
+</body>
+</html>

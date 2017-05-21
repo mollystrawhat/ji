@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多个div平铺</title>
+    <style>
+        .layout{
+            width: 800px;
+            margin:0 auto;
+        }
+        .layout h2{
+            color:#666;
+            text-align: center;
+            padding:10px 0; 
+            border-bottom: 1px solid #ccc;
+        }
+        .layout ul{
+            margin-left:-10px;
+        }
+        .layout ul:after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        ul,li{
+            margin:0;
+            padding: 0;
+            list-style: none;
+        }
+        .layout li{
+            width:260px;
+            float:left;
+            margin:30px 0 0 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+        }
+        .layout li img{
+            width:100%;
+            opacity: 0.75;
+        }
+        .layout li p{
+            text-align: center;
+            font-size: 17px;
+            margin:10px 0;
+            padding:1px 16px;
+        }
+    </style>
+</head>
+<body>
+ <div class="layout">
+     <h2>风景如画</h2>
+     <div class="content">
+        <ul>
+            <li>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <p>风景如画</p>
+            </li>
+            <li>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <p>风景如画</p>
+            </li>
+            <li>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <p>风景如画</p>
+            </li>
+            <li>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <p>风景如画</p>
+            </li>
+            <li>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <p>风景如画</p>
+            </li>
+            <li>
+                <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="">
+                <p>风景如画</p>
+            </li>
+        </ul>
+     </div>
+ </div>   
+</body>
+</html>

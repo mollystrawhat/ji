@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一栏布局（通栏）</title>
+    <style>
+        body{
+            min-width: 650px;
+        }
+        .layout{
+            width: 650px;
+            margin: 0 auto;
+            border:1px dashed red;
+        }
+        .content{
+            width:650px;
+            height: 450px;
+            background: pink;
+        }
+        .header{
+            height: 50px;
+            background: yellow;
+        }
+        .footer{
+            height: 40px;
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="layout">header</div>
+    </div>
+    <div class="content layout">content</div>
+    <div class="footer">
+        <div class="layout">footer</div>
+    </div>
+</body>
+</html>

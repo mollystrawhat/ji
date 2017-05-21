@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>导航栏使用a标签，并居中</title>
+  <style>
+        .layout{
+        text-align: center;
+        background: red;
+        padding:3px;
+        font-size: 0;
+        }
+    .layout a{
+        display:inline-block;
+        text-decoration: none;
+        color:#fff;
+        font-size: 13px;
+        padding:4px 5px;
+        border:1px solid #eee;
+        border-right:none;
+    }
+    .layout a:first-child{
+        border-radius:3px 0 0 3px;
+    }
+    .layout a:last-child{
+        border-right:1px solid #eee;
+        border-radius:0 3px 3px 0;
+    }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <a href="#">1111</a>
+  <a href="#">2222</a>
+  <a href="#">3333</a>
+</div>
+</body>
+</html>v

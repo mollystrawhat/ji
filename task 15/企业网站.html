@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业网页</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3m5rszzyqqynl8fr.css">
+    <style>
+        body,html{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            color:#777;
+        }
+        li{
+            list-style: none;
+            float:left;
+            display: inline-block;
+        }
+        .clearfix:after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        nav{
+            position: fixed;
+            width:100%;
+            min-width: 1100px;
+            z-index: 2;
+            height: 60px;
+            background: rgb(255, 254, 251);
+            color: #f6b220;
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+            }
+        nav img{
+            height: 60px;
+            margin-left: 10px;
+        }
+        nav ul{
+            float:right;
+        }
+        nav ul li{
+            padding-top: 8px;
+            margin-right:20px;
+        }
+/*------导航条结束---------导航条结束----------导航条结束-----------------*/
+        header{
+            background-image: url(http://src.leju.com/imp/imp/deal/0e/0e/a/de436c83824c6d5d5679e317376_p24_mk24_SX0.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 500px;
+        }
+        header{
+            padding-top:200px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 20px;
+        }
+        header a{
+            padding:10px 8px;
+            margin-top: 300px;
+            display: inline-block;
+            background: #4b8ee2;
+            color:#fff;
+            border-radius: 5px;
+        }
+/*------header结束---------header结束----------header结束-----------------*/
+        main .products,main .team{
+            background: #f7f7f7;
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+        main>div h2,main>div>p{
+            text-align: center;
+        }
+        main>div h2{
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 15px;
+        }
+        main>div>p{
+            font-size: 16px;
+            font-style: italic;
+            
+        }
+/*-----main总体结束------main总体结束------main总体结束------main总体结束--*/
+        .services{
+            text-align: center;
+        }
+        .services ul{
+            padding-left: 0;
+        }
+        .services ul .iconfont {
+            font-size:90px;
+            color: #f6b220;
+        }
+        .services ul li{
+            width: 355px;
+            padding: 50px 33px;
+        }   
+/*-----services结束-----services结束----services结束-------services结束---*/
+        .products{
+            text-align: center;
+        }
+        .products ul{
+            padding: 30px 72px;
+
+        }
+        .products li{
+            width: 330px;
+            margin-left:35px;
+            margin-bottom:30px;
+            background: #fff;
+        }
+        .products a{
+            width: 100%;
+            height: 250px;
+            display: inline-block;
+            position: relative;
+        }
+        .products li > a > img{
+            width: 100%;
+            height: 250px;
+        }
+        .products a .cover{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(254,209,54,.9);
+            opacity: 0;
+            color: #fff;
+            transition: .6s;
+        }
+        .products a .cover:hover {
+            opacity: 0.9;
+        }
+        .cover > i {
+            position: absolute;
+            left: 31%;
+            font-size: 118px;
+            line-height: 250px;
+}
+        .products li h3{
+            margin:10px 0;
+            color:#585858;
+        }
+        .products li p{
+            margin:10px 0;
+            font-style: italic;
+        }
+/*------产品部分结束------产品部分结束------产品部分结束------产品部分结束*/
+        .about>p{
+            margin-bottom: 60px;
+        }
+        .about .time-line{
+            mix-width:1140px;
+            margin-left: auto;
+            margin-right:auto;
+            margin:0 auto 100px auto;
+        }
+        .about ol{
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .time-line .circle-img{
+            width:156px;
+            height: 156px;
+            border:7px solid #f1f1f1;
+            border-radius: 50%;
+
+        }
+        .time-line li{
+            text-align: center;
+            position:relative;
+            display:block;
+            float:none;
+            padding-bottom:125px;
+        }
+        .time-line li:after{
+            content:'';
+            display:block;
+            position:absolute;
+            left:50%;
+            top:0;
+            border-left:2px solid #f1f1f1;
+            height:100%;
+            margin-left: 1px;
+            z-index: -1;
+        }
+        .time-line li .describe{
+            position:absolute;
+            right:50%;
+            top:0;
+            width:400px;
+            text-align: right;
+            margin-right: 90px;
+        }
+        .time-line li .describe h3{
+            margin:3px 0 -8px 0;
+        }
+        .time-line li:nth-child(odd) .describe{
+            text-align: left;
+            left: 50%;
+            margin-left:90px;
+        }
+        .time-line li:last-child{
+            padding-bottom: 0;
+        }
+        .time-line .circle-img{
+            display: inline-block;
+            width:156px;
+            background:#f6b220;
+            white-space: pre-wrap;
+        }
+        .time-line .circle-img>p{
+            margin: 0;
+            color:#fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+/*----时间线结束----时间线结束----时间线结束----时间线结束----时间线结束*/
+        .team{
+            text-align: center;
+        }
+        .team .iconfont{
+            font-size: 35px;
+        }
+        .team ul{
+            padding:0 80px;
+        }
+        .team li{
+            margin: 50px 64px;
+            text-align: center;
+        }
+        .team img{
+            width: 225px;
+            height: 225px;
+            border:7px solid #fff;
+            border-radius: 50%;
+        }
+        .team i{
+            display: inline-block;
+            margin: 0 8px; 
+        }
+
+        .team p:last-child{
+            font-style:normal;
+            width: 800px;
+            margin:0 auto;
+            line-height: 1.75;
+        }
+/*-----team结束-----team结束-----team结束-----team结束-----team结束-----*/
+        .contact{
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .contact .half{
+            float:left;
+            width:50%;
+        }
+        .contact .from-group{
+            padding: 50px;
+        }
+        .left-half input,.right-half textarea{
+            display: inline-block;
+            width: 500px;
+            padding: 20px;
+            margin-top: 26px;
+            border-radius: 4px;
+        }
+        .left-half input,.right-half textarea:focus{
+            outline: none;
+        }
+        .right-half textarea{
+            margin-left: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+        }
+        .contact a{
+            display: inline-block;
+            padding:20px;
+            background: #f6b220;
+            color:#fff;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+/*------联系结束------联系结束------联系结束------联系结束------联系结束*/
+/*main结束----main结束----main结束----main结束----main结束----main结束----*/
+        footer{
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 13px;
+        }
+        footer span{
+            display: inline-block;
+            width:400px;
+        }
+        footer .iconfont{
+            font-size: 28px;
+        }
+        footer a{
+            color:#f6b220;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav layout">
+        <img src="http://www.hola.com.cn//themes/d1miao/img/newimg/logo.png" alt="">
+        <ul class="clearfix">
+            <li>SERVICES</li>
+            <li>PRODUCTS</li>
+            <li>ABOUT HOLA</li>
+            <li>TEAM</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+    <header>
+        <a href="#">TELL ME MORE</a>
+    </header>
+    <main>
+        <div class="services">
+            <h2>SERVICES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ul class="clearfix">
+                <li>
+                    <i class="iconfont icon-cart"></i>
+                    <h3>E-Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+                <li>
+                    <i class="iconfont icon-cart"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+                <li>
+                    <i class="iconfont icon-cart"></i>
+                    <h3>Web Security</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="products">
+            <h2>PRODUCTS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="http://imgsrc.baidu.com/baike/pic/item/b151f8198618367a08ac73202c738bd4b31ce522.jpg" alt="">
+                        <span class="cover">
+                            <i class="iconfont icon-tmall"></i>
+                        </span>
+                    </a>
+                    <h3>Tea Set</h3>
+                    <p>HOLA House Of Living Art</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="http://img02.tooopen.com/images/20150723/tooopen_sy_135027788858.jpg" alt="">
+                        <span class="cover">
+                            <i class="iconfont icon-tmall"></i>
+                        </span>
+                    </a>
+                    <h3>Kitchen Ware</h3>
+                    <p>HOLA House Of Living Art</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="http://img1.jiafang168.com/content/2014/0505/Img_1399256947_22460.jpg" alt="">
+                        <span class="cover">
+                            <i class="iconfont icon-tmall"></i>
+                        </span>
+                    </a>
+                    <h3>Bedding</h3>
+                    <p>HOLA House Of Living Art</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="http://www.bjrg59.com/filespath/images/20170501170209.jpg" alt="">
+                        <span class="cover">
+                            <i class="iconfont icon-tmall"></i>
+                        </span>
+                    </a>
+                    <h3>Sanitary</h3>
+                    <p>HOLA House Of Living Art</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="http://pic.58pic.com/58pic/13/59/96/67U58PICpiA_1024.jpg" alt="">
+                        <span class="cover">
+                            <i class="iconfont icon-tmall"></i>
+                        </span>
+                    </a>
+                    <h3>Furniture</h3>
+                    <p>HOLA House Of Living Art</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="http://img1n.soufunimg.com/viewimage/jiancai/business/to8to/201508/24/536/f996139c715fd2a06ad27c3310c10b21/432x324c.jpg" alt="">
+                        <span class="cover">
+                            <i class="iconfont icon-tmall"></i>
+                        </span>
+                    </a>
+                    <h3>Storage</h3>
+                    <p>HOLA House Of Living Art</p>
+                </li>
+            </ul>
+        </div>
+        <div class="about">
+            <h2>HOLA In China</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ol class="time-line">
+                <li>
+                    <img class="circle-img" src="http://www.hola.com.cn/zhuanti/img/cpsjt/x3.jpg" alt="">
+                    <div class="describe">
+                        <time>2004</time>
+                        <h3>生活 艺术 家</h3>
+                        <p>国际家饰家用品牌HOLA特力和乐家居，致力于为顾客提供精致且独居风格的家用家饰商品，主营餐具茶具、床上用品、居家收纳等十五大品类超万种商品，以开架式陈列满足顾客一站购足的需求，并透过情景式陈列，提供顾客居家解决方案。</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="circle-img" src="http://www.hola.com.cn/zhuanti/img/cpsjt/x5.jpg" alt="">
+                    <div class="describe">
+                        <time>2004</time>
+                        <h3>生活 艺术 家</h3>
+                        <p>国际家饰家用品牌HOLA特力和乐家居，致力于为顾客提供精致且独居风格的家用家饰商品，主营餐具茶具、床上用品、居家收纳等十五大品类超万种商品，以开架式陈列满足顾客一站购足的需求，并透过情景式陈列，提供顾客居家解决方案。</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="circle-img" src="http://www.hola.com.cn/zhuanti/img/cpsjt/r3.jpg" alt="">
+                    <div class="describe">
+                        <time>2004</time>
+                        <h3>生活 艺术 家</h3>
+                        <p>国际家饰家用品牌HOLA特力和乐家居，致力于为顾客提供精致且独居风格的家用家饰商品，主营餐具茶具、床上用品、居家收纳等十五大品类超万种商品，以开架式陈列满足顾客一站购足的需求，并透过情景式陈列，提供顾客居家解决方案。</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="circle-img" src="http://www.hola.com.cn/zhuanti/img/cpsjt/r6.jpg" alt="">
+                    <div class="describe">
+                        <time>2004</time>
+                        <h3>生活 艺术 家</h3>
+                        <p>国际家饰家用品牌HOLA特力和乐家居，致力于为顾客提供精致且独居风格的家用家饰商品，主营餐具茶具、床上用品、居家收纳等十五大品类超万种商品，以开架式陈列满足顾客一站购足的需求，并透过情景式陈列，提供顾客居家解决方案。</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="circle-img">
+                        <p>BE PART<br>OF OUR<br>STORY!</p>
+                    </span>
+                </li>
+            </ol>
+        </div>
+        <div class="team">
+            <h2>OUR AMAZING TEAM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <ul  class="team-member clearfix">
+                <li>
+                    <img src="http://www.hola.com.cn/zhuanti/img/cpsjt/x3.jpg" alt="">
+                    <h3>Kay Garland</h3>
+                    <p>Lead Designer</p>
+                    <i class="iconfont icon-tmall"></i>
+                    <i class="iconfont icon-jd"></i>
+                    <i class="iconfont icon-wechat"></i>
+                </li>
+                <li>
+                    <img src="http://www.hola.com.cn/zhuanti/img/cpsjt/x5.jpg" alt="">
+                    <h3>Kay Garland</h3>
+                    <p>Lead Designer</p>
+                    <i class="iconfont icon-tmall"></i>
+                    <i class="iconfont icon-jd"></i>
+                    <i class="iconfont icon-wechat"></i>
+                </li>
+                <li>
+                    <img src="http://www.hola.com.cn/zhuanti/img/cpsjt/r3.jpg" alt="">
+                    <h3>Kay Garland</h3>
+                    <p>Lead Designer</p>
+                    <i class="iconfont icon-tmall"></i>
+                    <i class="iconfont icon-jd"></i>
+                    <i class="iconfont icon-wechat"></i>
+                </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        </div>
+        <div class="contact">
+            <h2>CONTACT US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <form class="from-group clearfix">
+                <div class="left-half half">
+                    <input type="text" placeholder="YOUR NAME">
+                    <input type="text" placeholder="YOUR EMAIL">
+                    <input type="text" placeholder="YOUR PHONE">
+                </div>
+                <div class="right-half half">
+                    <textarea id="message-contact" name="message"  cols="75" rows="12" placeholder="YOUR MESSAGE"></textarea>
+                </div>
+            </form>
+            <a href="#">SEND MESSAGE</a>
+                
+            
+        </div>
+    </main>
+    <footer>
+        <span>Copyright &copy Your Website 2014</span>
+        <span>
+            <i class="iconfont icon-tmall"></i>&nbsp 
+            <i class="iconfont icon-jd"></i>&nbsp
+            <i class="iconfont icon-wechat"></i>
+        </span>
+        <span>
+            <a href="#">Privacy Policy</a> &nbsp &nbsp 
+            <a href="#">Terms of Use</a>
+        </span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info-table</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        .layout{
+            width: 600px;
+            margin:0 auto;
+        }
+        .card{
+            padding-bottom:16px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+        }
+        
+        .card h2{
+            padding:15px 16px;
+            color: #fff;
+            background-color: #009688;
+        }
+        .card form{
+            margin:16px;
+        }
+        .layout p{
+            color:#757575;
+            vertical-align: middle;
+        }
+        /*重点    重点    重点    重点    重点    重点*/
+        .card input[type=text],textarea{
+            display: block;
+            border:none;
+            border-bottom: 1px solid #808080;
+            width:100%;
+        }
+        .card input[type=text],textarea:focus{
+            outline: none;
+        }
+        /*并没有分别float：left和float：right*/
+        .card .half{
+            width: 50%;
+            float: left;
+            line-height: 1.4;
+            color: #757575;
+            margin:10px 0;
+        }
+        input[type=submit]{
+            padding: 8px 16px;
+            color: #fff;
+            background-color: #009688;
+            border: none;
+        }
+        .clearfix{
+            *zoom:1;
+        }                                  
+        .clearfix:after{
+            content:"";
+            display:table;
+            clear:both;
+}           
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="card">
+        <h2>信息收集表</h2>
+        <form action="" method="post">
+            <div class="name">
+                <p>姓名</p>
+                <input type="text" id="name">
+            </div>
+            <div class="qq">
+                <p>QQ</p>
+                <input type="text" id="qq">
+            </div>
+            <div class="tosay">
+                <p>要说的话</p>
+                <textarea name="tosay" id="tosay" cols="30" rows="4"></textarea>
+            </div>
+            <div class="clearfix">
+                <div class="half">
+                    <input name="food" type="checkbox" value="Milk" checked="checked">Milk <br>
+                    <input name="food" type="checkbox" value="Sugar">Sugar <br>
+                    <input name="food" type="checkbox" value="Lemon">Lemon <br>
+                </div>
+                <div class="half">
+                    <input name="gender" type="radio" value="Male" checked="">Male <br>
+                    <input name="gender" type="radio" value="Female">Female <br>
+                </div>
+            </div>  
+                <!-- <div calss="submit"> -->
+                    <input type="submit" value="提交">
+                <!-- </div> -->
+        </form>
+        </div> 
+    </div>
+</body>
+</html>
