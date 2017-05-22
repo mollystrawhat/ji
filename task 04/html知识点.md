@@ -29,7 +29,8 @@
 <!-- 关于X-UA-Compatible -->
 <meta http-equiv="X-UA-Compatible" content="IE=6" ><!-- 使用IE6 -->
 <meta http-equiv="X-UA-Compatible" content="IE=7" ><!-- 使用IE7 -->
-<meta http-equiv="X-UA-Compatible" content="IE=8" ><!-- 使用IE8 -->```
+<meta http-equiv="X-UA-Compatible" content="IE=8" ><!-- 使用IE8 -->
+```
 
 - 浏览器内核控制
 国内浏览器很多都是双内核（webkit和Trident）,webkit内核高速浏览，IE内核兼容网页和旧版网站。 而添加meta标签的网站可以控制浏览器选择何种内核渲染。
