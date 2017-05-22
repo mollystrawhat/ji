@@ -23,10 +23,10 @@
 ##### 4. 有哪些常见的meta标签
 - 申明编码
 
-> <meta charset='utf-8' />
+><meta charset='utf-8' />
 - 优先使用 IE 最新版本和 Chrome
 
-> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <!-- 关于X-UA-Compatible -->
 <meta http-equiv="X-UA-Compatible" content="IE=6" ><!-- 使用IE6 -->
 <meta http-equiv="X-UA-Compatible" content="IE=7" ><!-- 使用IE7 -->
