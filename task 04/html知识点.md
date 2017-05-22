@@ -22,21 +22,20 @@
 内容主要由html负责，样式主要由css负责，而js主要负责行为
 ##### 4. 有哪些常见的meta标签
 - 申明编码
-```<meta charset='utf-8' />
+```<meta charset='utf-8' />```
 - 优先使用 IE 最新版本和 Chrome
 
-><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+```<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <!-- 关于X-UA-Compatible -->
 <meta http-equiv="X-UA-Compatible" content="IE=6" ><!-- 使用IE6 -->
 <meta http-equiv="X-UA-Compatible" content="IE=7" ><!-- 使用IE7 -->
-<meta http-equiv="X-UA-Compatible" content="IE=8" ><!-- 使用IE8 -->
+<meta http-equiv="X-UA-Compatible" content="IE=8" ><!-- 使用IE8 -->```
 
 - 浏览器内核控制
 国内浏览器很多都是双内核（webkit和Trident）,webkit内核高速浏览，IE内核兼容网页和旧版网站。 而添加meta标签的网站可以控制浏览器选择何种内核渲染。
 搜狗高速浏览器、QQ浏览器：IE内核（兼容模式）
 360极速浏览器、遨游浏览器：Webkit内核（极速模式）
- 
- > <meta name="renderer" content="webkit|ie-comp|ie-stand">
+```<meta name="renderer" content="webkit|ie-comp|ie-stand">```
 
 
 
@@ -45,32 +44,32 @@
 - 禁止浏览器从本地计算机的缓存中访问页面内容
 这样设定，访问者将无法脱机浏览。
 
-> <meta http-equiv="Pragma" content="no-cache">
+```<meta http-equiv="Pragma" content="no-cache">```
 - 避免百度转码申明
 用百度打开网页可能会对其进行转码（比如贴广告），避免转码可添加如下meta
 
-> <meta http-equiv="Cache-Control" content="no-siteapp" />
+```<meta http-equiv="Cache-Control" content="no-siteapp" />```
 
 - 页面关键词
 每个网页应具有描述该网页内容的一组唯一的关键字, 不要太短也不要太长
 
-> <meta name="keywords" content="your tags" />
+```<meta name="keywords" content="your tags" />```
 - 页面描述
 每个网页都应该有一个不超过150个字符的页面描述
 
-> <meta name="description" content="150 words" />
+```<meta name="description" content="150 words" />```
 
 - 设置搜索引擎索引方式
 
-> <meta name="robots" content="index,follow" />
-<!--
+```<meta name="robots" content="index,follow" />
+
     all：文件将被检索，且页面上的链接可以被查询；
     none：文件将不被检索，且页面上的链接不可以被查询；
     index：文件将被检索；
     follow：页面上的链接可以被查询；
     noindex：文件将不被检索；
-    nofollow：页面上的链接不可以被查询。
- -->
+    nofollow：页面上的链接不可以被查询。```
+ 
 
 
 
