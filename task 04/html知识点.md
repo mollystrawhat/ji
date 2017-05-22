@@ -22,7 +22,6 @@
 内容主要由html负责，样式主要由css负责，而js主要负责行为
 ##### 4. 有哪些常见的meta标签
 - 申明编码
-
 ><meta charset='utf-8' />
 - 优先使用 IE 最新版本和 Chrome
 
